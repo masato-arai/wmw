@@ -1,0 +1,17 @@
+/vendor
+.env
+.eslintignore
+.eslintrc
+.git
+.gitignore
+.stylelintrc
+craft.bat
+yarn-error.log
+.DS_Store
+yarn.lock
+/storage
+node_modules
+web/cpresources
+deploy
+rsync-exclude-list.txt
+rsync-exclude-list-live.txt
