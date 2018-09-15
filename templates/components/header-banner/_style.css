@@ -3,8 +3,27 @@
 
 .header-banner__top {
   background-color: var(--color-linkWater);
+  display: block;
+
+  @media (--tablet) {
+    display: none;
+  }
 }
 
 .header-banner__bottom {
   background-color: var(--color-pattensBlue);
+}
+
+.header-banner__body {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.185em;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (--tablet) {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height: 16px;
+  }
 }

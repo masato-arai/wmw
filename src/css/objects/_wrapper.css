@@ -1,6 +1,5 @@
 .o-wrapper {
   padding: 0 var(--spacing);
-  width: 100%;
 
   @media (--wide) {
     padding: 0 var(--spacing-large);
