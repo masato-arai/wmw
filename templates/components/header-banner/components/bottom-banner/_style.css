@@ -9,3 +9,18 @@
 .header-banner__bottom {
   background-color: var(--color-pattensBlue);
 }
+
+.header-banner__bottom-item {
+  @media (--tablet) {
+    flex: 1;
+  }
+
+  &:nth-child(2) {
+    min-width: 320px;
+    text-align: center;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
+}
