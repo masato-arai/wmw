@@ -1,0 +1,33 @@
+{% set navItems = [
+  {
+    linkUrl: '/',
+    label: 'Home'
+  },
+  {
+    linkUrl: '',
+    label: 'Collections'
+  },
+  {
+    linkUrl: '/',
+    label: 'Lookbook'
+  },
+  {
+    linkUrl: '/',
+    label: 'About'
+  }
+] %}
+
+<ul class="l-flex l-flex--space-between header-nav">
+  {% for nav in navItems %}
+    {% set linkUrl = nav.linkUrl %}
+    {% set label = nav.label %}
+
+    <li class="header-nav__item">
+      <a
+        {% if linkUrl|length %}href="{{ linkUrl }}"{% endif %}
+      {% if label == 'Collections' %}class="header-nav__collections js-collections-opener"{% endif %}>
+        {{ label }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

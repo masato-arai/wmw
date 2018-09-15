@@ -1,0 +1,19 @@
+.header-nav__item {
+  flex: 1;
+  text-align: center;
+
+  & > a {
+    color: var(--color-arapawa);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.header-nav__collections {
+  cursor: pointer;
+}
