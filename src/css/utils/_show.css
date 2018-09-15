@@ -1,0 +1,7 @@
+.u-show-tablet {
+  display: block;
+
+  @media (--desktop) {
+    display: none;
+  }
+}

@@ -35,6 +35,8 @@
 @import '../../templates/components/header-banner/components/top-banner/style.css';
 @import '../../templates/components/header-banner/components/currency-picker/style.css';
 @import '../../templates/components/header-banner/components/language-selector/style.css';
+@import '../../templates/components/header-menu/style.css';
 
 /* Utilities */
 @import './utils/hide';
+@import './utils/show';

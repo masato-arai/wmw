@@ -1,5 +1,5 @@
 .header-banner__bottom {
-  height: 40px;
+  height: 35px;
 
   @media (--tablet) {
     height: 50px;
