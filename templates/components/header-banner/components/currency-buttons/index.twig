@@ -1,8 +1,24 @@
+{% set currencies = [
+  {
+    url: '/',
+    value: 'UK',
+    label: 'GB',
+  },
+  {
+    url: '/',
+    value: 'US',
+    label: 'USD'
+  }
+] %}
+
 <div class="l-flex currency-buttons">
-  <div class="currency-buttons__item">
-    {% include 'components/small-button' %}
-  </div>
-  <div class="currency-buttons__item">
-    {% include 'components/small-button' %}
-  </div>
+  {% for currency in currencies %}
+    <div class="currency-buttons__item">
+      {% include 'components/small-button' with {
+      url: currency.url,
+        value: currency.value,
+        label: currency.label,
+      } %}
+    </div>
+  {% endfor %}
 </div>

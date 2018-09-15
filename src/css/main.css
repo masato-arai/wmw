@@ -14,6 +14,7 @@
 @import './fonts/font-family';
 
 /* Elements */
+@import './elements/a';
 @import './elements/html';
 @import './elements/body';
 
@@ -28,9 +29,11 @@
 @import './objects/wrapper';
 
 /* Components */
+@import '../../templates/components/small-button/style.css';
 @import '../../templates/components/header-banner/style.css';
 @import '../../templates/components/header-banner/components/bottom-banner/style.css';
 @import '../../templates/components/header-banner/components/top-banner/style.css';
+@import '../../templates/components/header-banner/components/currency-buttons/style.css';
 
 /* Utilities */
 @import './utils/hide';

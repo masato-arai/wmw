@@ -1,11 +1,7 @@
-.currency-buttons {
-
-}
-
 .currency-buttons__item {
-  margin-left: var(--space-small);
+  margin-left: var(--spacing-small);
 
-  &:last-child {
+  &:first-child {
     margin-left: 0;
   }
 }
