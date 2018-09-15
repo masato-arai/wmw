@@ -4,26 +4,26 @@
 
 # Craft runtime and backups folders
 # ----------------------------------------------------------------------
-# /storage/*
+/storage/*
 
 # Uploaded files
 # ----------------------------------------------------------------------
-#/web/cms/*
+/web/cms/*
 
 # BUILD FILES
 # ----------------------------------------------------------------------
-#/node_modules/*
-#/build/*
-#/yarn-error.log
-#/npm-debug.log
+/node_modules/*
+/build/*
+/yarn-error.log
+/npm-debug.log
 
 # Misc files
 # ----------------------------------------------------------------------
 .DS_Store
-#Thumbs.db
+Thumbs.db
 
 # COMPILED FILES
 # ----------------------------------------------------------------------
-#/web/js/*
-#/web/css/*
-#/web/mix-manifest.json
+/web/js/*
+/web/css/*
+/web/mix-manifest.json

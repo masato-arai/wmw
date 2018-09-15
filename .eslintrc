@@ -7,6 +7,6 @@
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
-    "global-require": "off",
+    "global-require": "off"
   }
 }
