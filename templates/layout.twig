@@ -8,17 +8,15 @@
     <meta name="referrer" content="origin-when-cross-origin" />
     <meta name="description" content="WE MAKE WEBSITES"/>
 
-    {# <link media="all" rel="stylesheet" href="{{ mix('css/main.css') }}"> #}
+    <link media="all" rel="stylesheet" href="{{ mix('css/main.css') }}">
   </head>
 
   <body>
-    <div id="app">
-      {% block header %}{% endblock %}
-      {% block content %}{% endblock %}
-    </div>
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
 
-    {# <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
     <script type="text/javascript" src="{{ mix('js/vendor.js') }}"></script>
-    <script type="text/javascript" src="{{ mix('js/main.js') }}"></script> #}
+    <script type="text/javascript" src="{{ mix('js/main.js') }}"></script>
   </body>
 </html>
