@@ -1,0 +1,6 @@
+.o-button {
+  color: inherit;
+  font-family: var(--font-us-medium);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}

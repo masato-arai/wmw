@@ -1,3 +1,5 @@
 body {
+  color: var(--color-nero);
+  font-family: var(--font-roboto);
   height: 100%;
 }

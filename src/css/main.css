@@ -20,5 +20,12 @@
 /* Layouts */
 @import './layouts/flexbox';
 
+/* Objects */
+@import './objects/body';
+@import './objects/button';
+@import './objects/display';
+@import './objects/icon';
+@import './objects/wrapper';
+
 /* Components */
-@import '../../templates/components/top-bar/top-bar';
+@import '../../templates/components/header-banner/style.css';

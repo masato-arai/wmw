@@ -1,0 +1,10 @@
+.header-banner {
+}
+
+.header-banner__top {
+  background-color: var(--color-linkWater);
+}
+
+.header-banner__bottom {
+  background-color: var(--color-pattensBlue);
+}

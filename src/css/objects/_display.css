@@ -1,0 +1,14 @@
+.o-display {
+  font-family: var(--font-playfair);
+}
+
+.o-display--1 {
+  font-size: 32px;
+  line-height: 1;
+
+  @media (--wide) {
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    line-height: 80px;
+  }
+}
