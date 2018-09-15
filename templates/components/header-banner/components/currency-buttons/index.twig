@@ -15,7 +15,7 @@
   {% for currency in currencies %}
     <div class="currency-buttons__item">
       {% include 'components/small-button' with {
-      url: currency.url,
+        url: currency.url,
         value: currency.value,
         label: currency.label,
       } %}

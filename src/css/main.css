@@ -15,8 +15,8 @@
 
 /* Elements */
 @import './elements/a';
-@import './elements/html';
 @import './elements/body';
+@import './elements/html';
 
 /* Layouts */
 @import './layouts/flexbox';
