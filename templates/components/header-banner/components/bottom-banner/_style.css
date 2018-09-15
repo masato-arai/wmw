@@ -1,0 +1,11 @@
+.header-banner__bottom {
+  height: 40px;
+
+  @media (--tablet) {
+    height: 50px;
+  }
+}
+
+.header-banner__bottom {
+  background-color: var(--color-pattensBlue);
+}

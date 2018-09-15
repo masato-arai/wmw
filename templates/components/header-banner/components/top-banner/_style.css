@@ -1,0 +1,16 @@
+.header-banner__top {
+  height: 40px;
+
+  @media (--tablet) {
+    height: 50px;
+  }
+}
+
+.header-banner__top {
+  background-color: var(--color-linkWater);
+  display: flex;
+
+  @media (--tablet) {
+    display: none;
+  }
+}

@@ -1,17 +1,7 @@
 .header-banner {
 }
 
-.header-banner__top {
-  background-color: var(--color-linkWater);
-  display: block;
-
-  @media (--tablet) {
-    display: none;
-  }
-}
-
-.header-banner__bottom {
-  background-color: var(--color-pattensBlue);
+.header-banner__language-selector {
 }
 
 .header-banner__body {
@@ -25,5 +15,13 @@
     font-size: 14px;
     letter-spacing: 0.2em;
     line-height: 16px;
+  }
+}
+
+.hide-mobile {
+  display: none;
+
+  @media (--tablet) {
+    display: block;
   }
 }
