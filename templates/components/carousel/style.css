@@ -8,16 +8,92 @@
   & .slick-slider > div > div > div > div, {
     height: 100%;
   }
+
+  & .slick-dots {
+    align-items: center;
+    background-color: tranparent;
+    bottom: 18px;
+    display: flex;
+    justify-content: center;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    @media (--tablet) {
+      bottom: 43px;
+    }
+  }
+
+  & .slick-dots li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 4px;
+    position: relative;
+    height: 16px;
+    width: 16px;
+  }
+
+  & .slick-dots li button {
+    background: transparent !important;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    &:before {
+      background-color: var(--color-white);
+      border: 0;
+      border-radius: 50%;
+      content: '';
+      height: 12px;
+      left: 50%;
+      opacity: 0.6;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s;
+      width: 12px;
+    }
+
+    &:hover:before,
+    &:focus:before {
+      background-color: var(--color-white);
+      height: 16px;
+      opacity: 1;
+      width: 16px;
+    }
+  }
+
+  & .slick-dots li.slick-active button:before {
+    background-color: var(--color-white);
+    height: 16px;
+    opacity: 1;
+    width: 16px;
+  }
 }
 
 .carousel__arrow {
   cursor: pointer;
+  display: none;
   height: 32px;
   position: absolute;
   top: 50%;
   transform: translateY(50%);
   width: 32px;
   z-index: 2;
+
+  @media (--desktop) {
+    display: block;
+  }
 
   &--prev {
     left: var(--spacing);
@@ -63,6 +139,7 @@
   backface-visibility: hidden;
   color: var(--color-white);
   height: 100%;
+  margin: 0 var(--spacing);
   position: relative;
   text-align: center;
   user-select: text;
