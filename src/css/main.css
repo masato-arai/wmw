@@ -1,0 +1,24 @@
+/* Normalize */
+@import '../../node_modules/normalize.css/normalize.css';
+
+/* Variables */
+@import './variables/colors.css';
+@import './variables/media-queries.css';
+@import './variables/spacings.css';
+
+/* Libraries */
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import './libs/slick-overwrite.css';
+
+/* Fonts */
+@import './fonts/font-family';
+
+/* Elements */
+@import './elements/html';
+@import './elements/body';
+
+/* Layouts */
+@import './layouts/flexbox';
+
+/* Components */
+@import '../../templates/components/top-bar/top-bar';

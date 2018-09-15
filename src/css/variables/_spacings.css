@@ -1,0 +1,8 @@
+:root {
+  --spacing-tiny: 6px;
+  --spacing-small: 12px;
+  --spacing: 24px;
+  --spacing-large: 48px;
+  --spacing-huge: 96px;
+  --spacing-gigantic: 192px;
+}

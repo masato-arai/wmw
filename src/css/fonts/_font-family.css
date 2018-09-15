@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Univers-Light';
+  src: url('/fonts/UniversLTStd-Light/UniversLTStd-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/fonts/UniversLTStd/UniversLTStd.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'UrbanSplashLight';
+  src: url('/fonts/UrbanSplashLight-Regular/UrbanSplashLight-Regular.woff')
+    format('woff');
+}
+
+@font-face {
+  font-family: 'UrbanSplashMedium';
+  src: url('/fonts/UrbanSplashMedium-Regular/UrbanSplashMedium-Regular.woff')
+    format('woff');
+}
+
+:root {
+  --font-univers-light: 'Univers-Light', Helvetica, Arial, sans-serif;
+  --font-univers: 'Univers', Helvetica, Arial, sans-serif;
+  --font-us-light: 'UrbanSplashLight', Arial, sans-serif;
+  --font-us-medium: 'UrbanSplashMedium', Arial, sans-serif;
+}

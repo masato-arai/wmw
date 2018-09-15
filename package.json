@@ -30,6 +30,11 @@
     "gsap": "^2.0.2",
     "jquery": "^3.3.1",
     "laravel-mix": "^2.1.14",
+    "lost": "^8.3.0",
+    "normalize.css": "^8.0.0",
+    "postcss-custom-media": "^7.0.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-simple-vars": "^5.0.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
