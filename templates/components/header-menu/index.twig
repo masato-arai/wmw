@@ -19,31 +19,9 @@
 
       <div class="header-menu__item">
         <div class="l-flex l-flex--end">
-          <ul class="l-flex">
-            <li class="u-hide-mobile header-menu__ui">
-              <a href="/">
-                <img src="/assets/svgs/search.svg" class="o-icon" />
-              </a>
-            </li>
-            <li class="u-hide-mobile header-menu__ui">
-              <a href="/">
-                <img src="/assets/svgs/profile.svg" class="o-icon" />
-              </a>
-            </li>
-            <li class="u-hide-mobile header-menu__ui">
-              <a href="/">
-                <img src="/assets/svgs/heart.svg" class="o-icon" />
-              </a>
-            </li>
-            <li class="header-menu__ui">
-              <a href="/">
-                <img src="/assets/svgs/bag.svg" class="o-icon" />
-              </a>
-            </li>
-          </ul>
+          {% include 'components/header-menu/components/header-ui' %}
         </div>
       </div>
-
     </div>
   </div>
 </div>

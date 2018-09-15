@@ -1,0 +1,7 @@
+.header-ui__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
