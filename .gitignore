@@ -27,3 +27,5 @@ Thumbs.db
 /web/js/*
 /web/css/*
 /web/mix-manifest.json
+
+/deploy
