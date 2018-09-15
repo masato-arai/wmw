@@ -65,7 +65,7 @@
   height: 100%;
   position: relative;
   text-align: center;
-  user-select: all;
+  user-select: text;
   z-index: 2;
 
   @media (--tablet) {

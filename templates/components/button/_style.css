@@ -11,7 +11,7 @@
   transition: all 0.2s;
 
   &:hover {
-    background-color: #386C7C;
+    background-color: var(--color-cerulean);
   }
 
   & > span {
