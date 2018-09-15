@@ -31,6 +31,7 @@
 @import './objects/wrapper';
 
 /* Components */
+@import '../../templates/components/button/style.css';
 @import '../../templates/components/small-button/style.css';
 @import '../../templates/components/header-banner/style.css';
 @import '../../templates/components/header-banner/components/bottom-banner/style.css';

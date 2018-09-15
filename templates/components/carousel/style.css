@@ -65,10 +65,19 @@
   height: 100%;
   position: relative;
   text-align: center;
+  user-select: all;
   z-index: 2;
 
   @media (--tablet) {
     margin: 0 auto;
     max-width: 50%;
+  }
+}
+
+.carousel__body {
+  margin-bottom: 41px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

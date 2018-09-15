@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--color-arapawa);
+  border-radius: 0;
+  display: inline-block;
+  height: 52px;
+  min-width: 160px;
+  padding: 0 var(--spacing-small);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #386C7C;
+  }
+
+  & > span {
+    color: var(--color-white);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 19px;
+    height: 100%;
+  }
+}
