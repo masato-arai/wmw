@@ -31,3 +31,6 @@
 @import '../../templates/components/header-banner/style.css';
 @import '../../templates/components/header-banner/components/bottom-banner/style.css';
 @import '../../templates/components/header-banner/components/top-banner/style.css';
+
+/* Utilities */
+@import './utils/hide';

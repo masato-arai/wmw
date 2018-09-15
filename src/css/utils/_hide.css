@@ -1,0 +1,7 @@
+.u-hide-mobile {
+  display: none;
+
+  @media (--tablet) {
+    display: block;
+  }
+}
