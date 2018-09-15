@@ -152,7 +152,11 @@
 }
 
 .carousel__body {
-  margin-bottom: 41px;
+  margin-bottom: 29px;
+
+  @media (--tablet) {
+    margin-bottom: 41px;
+  }
 
   &:last-child {
     margin-bottom: 0;
