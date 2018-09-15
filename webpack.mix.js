@@ -16,6 +16,7 @@ mix
   })
   .setPublicPath('web')
   .setResourceRoot('src')
+  .postCss('src/css/main.css', 'web/css', [require('precss')()])
   .js('src/js/main.js', 'web/js')
   .extract(['fastclick', 'jquery'])
   .version();
