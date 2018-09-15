@@ -1,0 +1,74 @@
+.carousel {
+  height: 100%;
+
+  & .slick-slider,
+  & .slick-slider > div,
+  & .slick-slider > div > div,
+  & .slick-slider > div > div > div,
+  & .slick-slider > div > div > div > div, {
+    height: 100%;
+  }
+}
+
+.carousel__arrow {
+  cursor: pointer;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 32px;
+  z-index: 2;
+
+  &--prev {
+    left: var(--spacing);
+
+    @media (--wide) {
+      left: var(--spacing-large);
+    }
+  }
+
+  &--next {
+    right: var(--spacing);
+
+    @media (--wide) {
+      right: var(--spacing-large);
+    }
+  }
+}
+
+.carousel__item {
+  backface-visibility: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__overlay {
+  backface-visibility: hidden;
+  background: var(--color-black);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel__content {
+  backface-visibility: hidden;
+  color: var(--color-white);
+  height: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  @media (--tablet) {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}

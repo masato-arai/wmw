@@ -1,0 +1,55 @@
+{% set slides = [
+  {
+    bgImage: '/assets/images/bg.jpg',
+    heading: 'Image Slider',
+    body: 'Tell us your brand’s story through videos and images',
+    button: {
+      url: '/',
+      label: 'Explore',
+    }
+  },
+  {
+    bgImage: '/assets/images/bg.jpg',
+    heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    body: 'Donec eget finibus metus. Duis in erat et lorem placerat porta.',
+    button: {
+      url: '/',
+      label: 'Duis aliquet',
+    }
+  },
+  {
+    bgImage: '/assets/images/bg.jpg',
+    heading: 'Vestibulum non ultricies libero.',
+    body: ' Curabitur vitae tellus eget nulla efficitur tincidunt sit amet ac odio.',
+    button: {
+      url: '/',
+      label: ' Donec non',
+    }
+  },
+] %}
+
+<div class="carousel">
+  <div class="carousel__arrow carousel__arrow--prev js-carousel-ui-prev">
+    <img src="/assets/svgs/arrow-prev.svg" width="32" />
+  </div>
+
+  <div class="js-carousel-main">
+    {% for slide in slides %}
+    <div
+      class="carousel__item"
+      style="background-image: url({{ slide.bgImage }});">
+      <div class="carousel__overlay"></div>
+      <div class="l-flex l-flex--center-middle carousel__content">
+        <div>
+          <h2 class="o-display o-display--1">{{ slide.heading }}</h2>
+          <p class="o-body">{{ slide.body }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="carousel__arrow carousel__arrow--next js-carousel-ui-next">
+    <img src="/assets/svgs/arrow-next.svg" width="32" />
+  </div>
+</div>

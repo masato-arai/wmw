@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrows</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/Section/Hero-slider" transform="translate(-1494.000000, -320.000000)">
+            <g id="Slider/hero">
+                <g id="Controls" transform="translate(76.000000, 320.000000)">
+                    <g id="Arrows">
+                        <g id="icon/forward" transform="translate(1418.000000, 0.000000)">
+                            <g id="ic_forward" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="ic_back" stroke-width="2">
+                                    <g id="back" transform="translate(10.666667, 5.333333)">
+                                        <path d="M10.6666667,0 L0,10.6666667" id="Line"></path>
+                                        <path d="M0,10.6666667 L10.6666667,21.3333333" id="Line"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="facebook-logo" transform="translate(-69.333333, 25.333333)">
+                                <g id="Capa_1"></g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

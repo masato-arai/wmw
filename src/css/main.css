@@ -16,7 +16,9 @@
 /* Elements */
 @import './elements/a';
 @import './elements/body';
+@import './elements/headings';
 @import './elements/html';
+@import './elements/p';
 
 /* Layouts */
 @import './layouts/flexbox';
@@ -38,6 +40,8 @@
 @import '../../templates/components/header-menu/style.css';
 @import '../../templates/components/header-menu/components/header-nav/style.css';
 @import '../../templates/components/header-menu/components/header-ui/style.css';
+@import '../../templates/components/hero/style.css';
+@import '../../templates/components/carousel/style.css';
 
 /* Utilities */
 @import './utils/hide';

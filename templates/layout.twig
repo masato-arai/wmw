@@ -19,6 +19,7 @@
     {% include 'components/header-banner' %}
     {% include 'components/header-menu' %}
 
+    {% block hero %}{% endblock %}
     {% block content %}{% endblock %}
 
     <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>

@@ -4,11 +4,16 @@
 
 .o-display--1 {
   font-size: 32px;
-  line-height: 1;
+  line-height: 43px;
+  margin-bottom: 22px;
+
+  @media (--tablet) {
+    margin-bottom: var(--spacing);
+  }
 
   @media (--wide) {
     font-size: 60px;
-    letter-spacing: 0.2em;
+    letter-spacing: 2px;
     line-height: 80px;
   }
 }
