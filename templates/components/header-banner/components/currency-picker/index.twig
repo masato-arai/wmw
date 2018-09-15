@@ -11,9 +11,9 @@
   }
 ] %}
 
-<div class="l-flex currency-buttons">
+<div class="l-flex currency-picker">
   {% for currency in currencies %}
-    <div class="currency-buttons__item">
+    <div class="currency-picker__item">
       {% include 'components/small-button' with {
         url: currency.url,
         value: currency.value,

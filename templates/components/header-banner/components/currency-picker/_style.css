@@ -1,4 +1,4 @@
-.currency-buttons__item {
+.currency-picker__item {
   margin-left: var(--spacing-small);
 
   &:first-child {

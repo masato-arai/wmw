@@ -1,0 +1,22 @@
+.language-selector {
+  cursor: pointer;
+  margin-left: auto;
+  width: 56px;
+
+  & img {
+    margin-top: 2px;
+  }
+}
+
+.language-selector__wrapper {
+  height: 27px;
+  padding-left: var(--spacing-tiny);
+}
+
+.language-selector__label {
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+}
