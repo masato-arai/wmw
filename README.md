@@ -10,28 +10,41 @@ http://wmw.m-a-s.info/
 
 ## Install
 
-Make sure that you have the Gatsby CLI program installed:
-
-```sh
-npm install --global gatsby-cli
-```
-
 Install modules
 
 ```sh
-yarn
+$ yarn
+```
+
+Install composer libraries
+
+```sh
+$ composer install
+```
+
+Create Storage Folder in root directory and change the permission
+
+```sh
+$ mkdir storage
+$ chmod -R 777 storage
+```
+
+Setup Project Database using .env.example
+
+```sh
+$ mv .env.example .env
 ```
 
 Then you can run it by:
 
 ```sh
-yarn dev
+yarn watch
 ```
 
 Open this page in a browser
 
 ```sh
-http://localhost:8000/
+http://localhost:3000/
 ```
 
 ## Deploy
@@ -39,5 +52,10 @@ http://localhost:8000/
 Deploy with Rsync by running the command below (NOTE: Server requires a password)
 
 ```sh
-./deploy
+$ mv deploy.example deploy
+
+Change your hosting info in the deploy file
+And run this command to deploy
+
+$ ./deploy
 ```
