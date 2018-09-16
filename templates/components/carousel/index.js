@@ -15,7 +15,7 @@ function carouselInit() {
     });
 }
 
-const carousel = () => {
+const carousel = async () => {
   carouselInit();
 };
 

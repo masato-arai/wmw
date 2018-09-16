@@ -23,7 +23,7 @@ export function hideMenu() {
   $(`.js-mega-menu[menu-type='${menuType}']`).removeClass('show');
 }
 
-const megaMenu = () => {
+const megaMenu = async () => {
   $('.js-mega-menu-opener, .js-mega-menu-bridge, .js-mega-menu')
     .mouseout(hideMenu)
     .mouseover(showMenu);
