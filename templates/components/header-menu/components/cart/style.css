@@ -12,7 +12,7 @@
   width: 100%;
   z-index: 100;
 
-  @media (--tablet) {
+  @media (--mobile-landscape) {
     min-width: 358px;
   }
 
@@ -35,16 +35,20 @@
   padding: 20px 15px 19px 17px;
   position: relative;
 
-  @media (--tablet) {
+  @media (--mobile-landscape) {
     padding: 37px 30px 37px 33px;
   }
 
   &::before {
     content: url(/assets/svgs/dropdown-triangle.svg);
     position: absolute;
-    top: -15px;
+    top: -14px;
     right: 16px;
     z-index: 1;
+
+    @media (--tablet) {
+      top: -15px;
+    }
 
     @media (--desktop) {
       right: 28px;
