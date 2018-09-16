@@ -1,5 +1,6 @@
 .header-nav__item {
   flex: 1;
+  position: relative;
   text-align: center;
 
   & > a {

@@ -27,11 +27,14 @@
         {% if linkUrl|length %}href="{{ linkUrl }}"{% endif %}
         {% if label == 'Collections' %}
           class="header-nav__mega-menu-opener js-mega-menu-opener"
+          menu-type="{{ label }}"
         {% endif %}>
         {{ label }}
       </a>
       {% if label == 'Collections' %}
-        {% include 'components/header-menu/components/mega-menu' %}
+        {% include 'components/header-menu/components/mega-menu-bridge' with {
+          menuType: label,
+        } %}
       {% endif %}
     </li>
   {% endfor %}
