@@ -1,7 +1,5 @@
 # Front End Test for WE MAKE WEBSITES
 
-I chose to use Gatsby for this project.
-
 For an overview of the project in a browser please visit [this page](http://wmw.m-a-s.info/).
 
 ```sh
