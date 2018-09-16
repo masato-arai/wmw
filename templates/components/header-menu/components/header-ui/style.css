@@ -1,7 +1,12 @@
 .header-ui__item {
   margin-right: 15px;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.header-ui__cart-opener {
+  cursor: pointer;
 }
