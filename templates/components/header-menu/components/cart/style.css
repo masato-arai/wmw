@@ -1,0 +1,133 @@
+.cart {
+  bottom: -22px;
+  border: 1px solid var(--color-whiteSmoke);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.17);
+  min-width: 298px;
+  opacity: 0;
+  position: absolute;
+  right: calc(-1 * var(--spacing-small));
+  transform: translateY(100%);
+  transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  visibility: hidden;
+  width: 100%;
+  z-index: 100;
+
+  @media (--tablet) {
+    min-width: 358px;
+  }
+
+  @media (--desktop) {
+    right: calc(-1 * var(--spacing));
+  }
+
+  @media (--wide) {
+    right: calc(-1 * var(--spacing-large));
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.cart__container {
+  background-color: var(--color-white);
+  padding: 37px 30px 37px 33px;
+  position: relative;
+
+  &::before {
+    content: url(/assets/svgs/dropdown-triangle.svg);
+    position: absolute;
+    top: -15px;
+    right: 16px;
+    z-index: 1;
+
+    @media (--desktop) {
+      right: 28px;
+    }
+
+    @media (--wide) {
+      right: 52px;
+    }
+  }
+
+  & > h3 {
+    font-family: var(--font-roboto);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-bottom: 23px;
+  }
+}
+
+.cart__list {
+  list-style: none;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.cart__item {
+  border-top: 1px solid var(--color-whiteSmoke);
+  margin-bottom: 26px;
+  padding-top: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cart__item-thumbnail {
+  margin-right: 19px;
+  width: 44%;
+
+  & > img {
+    width: 100%;
+  }
+}
+
+.cart__item-details {
+  width: 56%;
+}
+
+.cart__item-heading {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.cart__item-remove {
+  cursor: pointer;
+  padding-top: 4px;
+
+  & > img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.cart__item-category {
+  color: var(--color-shadyLady);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  font-size: 13px;
+  line-height: 26px;
+  margin-bottom: 5px;
+  margin-top: -2px;
+}
+
+.cart__item-quantity {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.cart__item-price {
+  font-family: var(--font-roboto);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+}

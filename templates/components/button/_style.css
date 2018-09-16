@@ -4,11 +4,11 @@
   display: inline-block;
   height: 52px;
   min-width: 160px;
-  padding: 0 var(--spacing-small);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s;
+  width: 100%;
 
   &:hover {
     background-color: var(--color-cerulean);
@@ -22,5 +22,6 @@
     letter-spacing: 2px;
     line-height: 19px;
     height: 100%;
+    padding: 0 var(--spacing);
   }
 }

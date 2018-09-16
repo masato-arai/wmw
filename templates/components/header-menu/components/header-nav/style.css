@@ -1,5 +1,12 @@
+.header-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header-nav__item {
   flex: 1;
+  position: relative;
   text-align: center;
 
   & > a {
@@ -14,6 +21,6 @@
   }
 }
 
-.header-nav__collections {
+.header-nav__mega-menu-opener {
   cursor: pointer;
 }

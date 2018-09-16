@@ -87,7 +87,7 @@
   height: 32px;
   position: absolute;
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(100%);
   width: 32px;
   z-index: 2;
 
@@ -98,16 +98,24 @@
   &--prev {
     left: var(--spacing);
 
-    @media (--wide) {
+    @media (--desktop) {
       left: var(--spacing-large);
+    }
+
+    @media (--wide) {
+      left: var(--spacing-huge);
     }
   }
 
   &--next {
     right: var(--spacing);
 
-    @media (--wide) {
+    @media (--desktop) {
       right: var(--spacing-large);
+    }
+
+    @media (--wide) {
+      right: var(--spacing-huge);
     }
   }
 }
@@ -160,5 +168,13 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.carousel__button {
+  margin: 0 auto;
+
+  & > a {
+    width: auto;
   }
 }

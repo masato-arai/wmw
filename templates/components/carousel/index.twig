@@ -10,7 +10,7 @@
   },
   {
     bgImage: '/assets/images/bg.jpg',
-    heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    heading: 'Lorem ipsum dolor sit amet, consectetur.',
     body: 'Donec eget finibus metus. Duis in erat et lorem placerat porta.',
     button: {
       url: '/',
@@ -43,10 +43,12 @@
         <div>
           <h2 class="o-display o-display--1">{{ slide.heading }}</h2>
           <p class="o-body carousel__body">{{ slide.body }}</p>
-          {% include 'components/button' with {
-            url: slide.button.url,
-            label: slide.button.label,
-          } %}
+          <div class="carousel__button">
+            {% include 'components/button' with {
+              url: slide.button.url,
+              label: slide.button.label,
+            } %}
+          </div>
         </div>
       </div>
     </div>

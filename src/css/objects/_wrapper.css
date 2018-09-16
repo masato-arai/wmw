@@ -1,8 +1,12 @@
 .o-wrapper {
   padding: 0 var(--spacing);
 
-  @media (--wide) {
+  @media (--desktop) {
     padding: 0 var(--spacing-large);
+  }
+
+  @media (--wide) {
+    padding: 0 var(--spacing-huge);
   }
 }
 

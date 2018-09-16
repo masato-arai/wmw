@@ -16,8 +16,10 @@
 /* Elements */
 @import './elements/a';
 @import './elements/body';
+@import './elements/button';
 @import './elements/headings';
 @import './elements/html';
+@import './elements/input';
 @import './elements/p';
 
 /* Layouts */
@@ -41,6 +43,10 @@
 @import '../../templates/components/header-menu/style.css';
 @import '../../templates/components/header-menu/components/header-nav/style.css';
 @import '../../templates/components/header-menu/components/header-ui/style.css';
+@import '../../templates/components/header-menu/components/cart/style.css';
+@import '../../templates/components/header-menu/components/mega-menu-bridge/style.css';
+@import '../../templates/components/header-menu/components/mega-menu/style.css';
+@import '../../templates/components/header-menu/components/quantity/style.css';
 @import '../../templates/components/hero/style.css';
 @import '../../templates/components/carousel/style.css';
 

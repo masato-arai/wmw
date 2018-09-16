@@ -1,0 +1,34 @@
+{% set menuType = 'Collections' %}
+
+<div class="mega-menu js-mega-menu" menu-type="{{ menuType }}">
+  <div class="o-wrapper">
+    <div class="mega-menu__container">
+      <div class="l-flex l-flex--space-between">
+        <div class="l-flex l-flex--middle mega-menu__column">
+          <ul class="mega-menu__list">
+            {% for i in 0..3 %}
+            <li class="mega-menu__list-item">
+              <a href="/" class="mega-menu__text-link">Collection {{ i + 1 }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="l-flex l-flex--middle mega-menu__column">
+          <ul class="mega-menu__list">
+            {% for i in 0..3 %}
+            <li class="mega-menu__list-item">
+              <a href="/" class="mega-menu__text-link">Collection {{ i + 1 }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="l-flex l-flex--middle mega-menu__column">
+          <img src="/assets/images/image-small.jpg" />
+        </div>
+        <div class="l-flex l-flex--middle mega-menu__column">
+          <img src="/assets/images/image-small.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

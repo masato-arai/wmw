@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Building app"
-yarn build
-
-echo "Deploying files to server"
-rsync -avP --exclude-from 'rsync-exclude-list.txt' ./ sekkithub@213.168.251.130:/home/sekkithub/apps/wmw/production/
-echo "Deployment complete"
