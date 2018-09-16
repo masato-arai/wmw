@@ -33,6 +33,11 @@ Setup Project Database using .env.example
 
 ```sh
 $ mv .env.example .env
+
+SQL file is stored in /src/sql directory
+Please upload it to your database
+
+$ cd src/sql
 ```
 
 Then you can run it by:
