@@ -15,8 +15,11 @@
 
   &:nth-child(2) {
     flex: 2;
-    min-width: 320px;
     text-align: center;
+
+    @media (--tablet) {
+      min-width: 320px;
+    }
   }
 
   &:last-child {
