@@ -1,34 +1,90 @@
-{% set menuType = 'Collections' %}
+{% set menus = [
+  {
+    type: 'Collections',
+    primaryCollections: [
+      {
+        title: 'Collection 1',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 2',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 3',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 4',
+        linkUrl: '/',
+      },
+    ],
+    secondaryCollections: [
+      {
+        title: 'Collection 1',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 2',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 3',
+        linkUrl: '/',
+      },
+      {
+        title: 'Collection 4',
+        linkUrl: '/',
+      },
+    ],
+    primaryImageAsset: '/assets/images/image-small.jpg',
+    secondaryImageAsset: '/assets/images/image-small.jpg',
+  }
+] %}
 
-<div class="mega-menu js-mega-menu" menu-type="{{ menuType }}">
-  <div class="o-wrapper">
-    <div class="mega-menu__container">
-      <div class="l-flex l-flex--space-between">
-        <div class="l-flex l-flex--middle mega-menu__column">
-          <ul class="mega-menu__list">
-            {% for i in 0..3 %}
-            <li class="mega-menu__list-item">
-              <a href="/" class="mega-menu__text-link">Collection {{ i + 1 }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="l-flex l-flex--middle mega-menu__column">
-          <ul class="mega-menu__list">
-            {% for i in 0..3 %}
-            <li class="mega-menu__list-item">
-              <a href="/" class="mega-menu__text-link">Collection {{ i + 1 }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="l-flex l-flex--middle mega-menu__column">
-          <img src="/assets/images/image-small.jpg" data-rjs="2" />
-        </div>
-        <div class="l-flex l-flex--middle mega-menu__column">
-          <img src="/assets/images/image-small.jpg" data-rjs="2" />
+{% for menu in menus %}
+  <div class="mega-menu js-mega-menu" menu-type="{{ menu.type }}">
+    <div class="o-wrapper">
+      <div class="mega-menu__container">
+        <div class="l-flex l-flex--space-between">
+          {% if menu.primaryCollections|length %}
+            <div class="l-flex l-flex--middle mega-menu__column">
+              <ul class="mega-menu__list">
+                {% for collection in menu.primaryCollections %}
+                  <li class="mega-menu__list-item">
+                    <a href="{{ collection.linkUrl }}" class="mega-menu__text-link">
+                      {{ collection.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if menu.secondaryCollections|length %}
+            <div class="l-flex l-flex--middle mega-menu__column">
+              <ul class="mega-menu__list">
+                {% for collection in menu.secondaryCollections %}
+                  <li class="mega-menu__list-item">
+                    <a href="{{ collection.linkUrl }}" class="mega-menu__text-link">
+                      {{ collection.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if menu.primaryImageAsset|length %}
+            <div class="l-flex l-flex--middle mega-menu__column">
+              <img src="{{ menu.primaryImageAsset }}" data-rjs="2" />
+            </div>
+          {% endif %}
+          {% if menu.secondaryImageAsset|length %}
+            <div class="l-flex l-flex--middle mega-menu__column">
+              <img src="{{ menu.secondaryImageAsset }}" data-rjs="2" />
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
-</div>
+{% endfor %}
