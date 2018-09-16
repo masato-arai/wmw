@@ -8,8 +8,12 @@ http://wmw.m-a-s.info/
 
 ![screen shot 2018-09-17 at 00 17 21](https://user-images.githubusercontent.com/4133530/45602073-52ba0a80-ba0f-11e8-88d1-791786a74db4.png)
 
-## CSS
+## Notes
 I only use [PostCSS](https://postcss.org/) in this project as I tried to get light weight as much as possible.
+Basically global JS and CSS files are in /src folder in root directory.
+All html and component templates are in /templates directory in root.
+The transpiled and compiled files are in /web folder instead of /public.
+(This is Craft CMS way so I just keep using it)
 
 ## Install
 
