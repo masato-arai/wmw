@@ -8,6 +8,9 @@ For an overview of the project in a browser please visit [this page](http://wmw.
 http://wmw.m-a-s.info/
 ```
 
+![screen shot 2018-09-17 at 00 17 21](https://user-images.githubusercontent.com/4133530/45602073-52ba0a80-ba0f-11e8-88d1-791786a74db4.png)
+
+
 ## Install
 
 Install modules
