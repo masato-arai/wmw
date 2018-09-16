@@ -5,13 +5,17 @@
   opacity: 0;
   max-width: 1400px;
   position: absolute;
-  transform: translateY(100%) translateY(-9px);
   visibility: hidden;
   width: 100%;
   z-index: 10;
 
   @media (--tablet) {
     display: block;
+    transform: translateY(100%) translateY(-10px);
+  }
+
+  @media (--desktop) {
+    transform: translateY(100%) translateY(-10px);
   }
 
   &.show {
