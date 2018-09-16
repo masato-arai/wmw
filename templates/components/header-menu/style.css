@@ -1,6 +1,7 @@
 .header-menu {
   background-color: var(--color-white);
   padding: 14px 0 13px;
+  position: relative;
 
   @media (--desktop) {
     padding: 29px 0 28px;

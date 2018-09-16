@@ -1,6 +1,6 @@
 .cart {
   bottom: -22px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--color-whiteSmoke);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.17);
   min-width: 298px;
   opacity: 0;

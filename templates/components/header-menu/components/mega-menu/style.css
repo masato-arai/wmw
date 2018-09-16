@@ -1,0 +1,24 @@
+.mega-menu {
+  background: var(--color-white);
+  border: 1px solid var(--color-whiteSmoke);
+  bottom: 0;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.17);
+  left: 0;
+  opacity: 0;
+  padding: 34px 27px;
+  position: absolute;
+  right: 0;
+  transform: translateY(100%) translateY(-8px);
+  visibility: hidden;
+  width: 100%;
+  z-index: 50;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & > div {
+    lost-column: 1/4;
+  }
+}

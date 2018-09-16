@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
-function hideMenu() {
+export function hideCart() {
   $('.js-cart').removeClass('active');
 }
 
-function showMenu() {
+function showCart() {
   $('.js-cart').addClass('active');
 }
 
@@ -16,17 +16,17 @@ const toggleCart = e => {
   e.stopPropagation();
   const $cart = $(e.target).next();
   if ($cart.hasClass('active')) {
-    hideMenu();
+    hideCart();
   } else {
-    showMenu();
+    showCart();
   }
 };
 
 const cart = () => {
-  $(window).on('click', hideMenu);
+  $(window).on('click', hideCart);
   $('.js-cart-opener').on('click', toggleCart);
   $('.js-cart').on('click', doNotClose);
-  $('.js-kebab-menu-item').on('click', hideMenu);
+  $('.js-kebab-menu-item').on('click', hideCart);
 
   $('.js-kebab-menu-item').click(e => {
     e.preventDefault();
