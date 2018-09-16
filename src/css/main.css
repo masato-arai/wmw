@@ -16,6 +16,7 @@
 /* Elements */
 @import './elements/a';
 @import './elements/body';
+@import './elements/button';
 @import './elements/headings';
 @import './elements/html';
 @import './elements/p';
