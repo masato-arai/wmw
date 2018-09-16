@@ -1,3 +1,4 @@
 .hero {
   height: 70%;
+  min-height: 320px;
 }

@@ -1,15 +1,15 @@
 .u-hide-mobile {
-  display: none;
+  display: none !important;
 
   @media (--tablet) {
-    display: block;
+    display: block !important;
   }
 }
 
 .u-hide-tablet {
-  display: none;
+  display: none !important;
 
   @media (--desktop) {
-    display: block;
+    display: block !important;
   }
 }

@@ -1,25 +1,40 @@
+{% set products = [
+  {
+    title: 'Prodcut Title',
+    category: 'Variant name',
+    thumbnail: '/assets/images/image-tiny.jpg',
+    price: '£60.00',
+  },
+  {
+    title: 'Prodcut 2',
+    category: 'Variant name',
+    thumbnail: '/assets/images/image-tiny.jpg',
+    price: '£120.00',
+  },
+] %}
+
 <div class="cart js-cart">
   <div class="cart__container">
     <h3>Your Cart</h3>
     <ul class="cart__list">
-      {% for i in 0..1 %}
+      {% for product in products %}
         <li class="cart__item">
           <div class="l-flex">
             <div class="cart__item-thumbnail">
-              <img src="/assets/images/image-tiny.jpg" />
+              <img src="{{ product.thumbnail }}" />
             </div>
             <div class="cart__item-details">
               <div class="l-flex l-flex--space-between">
-                <h5 class="cart__item-heading">Product Title</h5>
+                <h5 class="cart__item-heading">{{ product.title }}</h5>
                 <button class="cart__item-remove">
                   <img
                     src="/assets/svgs/close-tiny.svg"
                     class="cart__remove-icon" />
                 </button>
               </div>
-              <span class="cart__item-category">Variant name</span>
+              <span class="cart__item-category">{{ product.category }}</span>
               {% include 'components/header-menu/components/quantity' %}
-              <span class="cart__item-price">£60.00</span>
+              <span class="cart__item-price">{{ product.price }}</span>
           </div>
           </div>
         </li>

@@ -83,16 +83,18 @@
 
 .carousel__arrow {
   cursor: pointer;
-  display: none;
   height: 32px;
   position: absolute;
   top: 50%;
-  transform: translateY(100%);
   width: 32px;
   z-index: 2;
 
+  @media (--tablet) {
+    transform: translateY(-50%);
+  }
+
   @media (--desktop) {
-    display: block;
+    transform: translateY(100%);
   }
 
   &--prev {
