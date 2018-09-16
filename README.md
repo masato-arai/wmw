@@ -57,7 +57,7 @@ http://localhost:3000/
 
 ## Deploy
 
-Deploy with Rsync by running the command below (NOTE: Server requires a password)
+Deploy with Rsync by running the command below (NOTE: You need to setup your server)
 
 ```sh
 $ mv deploy.example deploy
