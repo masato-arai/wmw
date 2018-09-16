@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Building production files"
+yarn production
+
+echo "Deploying files to server"
+rsync -avP --exclude-from 'rsync-exclude-list.txt' ./ USER@HOST:/path/to/your/project/
+echo "Deployment complete"
