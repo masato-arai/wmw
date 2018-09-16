@@ -170,3 +170,11 @@
     margin-bottom: 0;
   }
 }
+
+.carousel__button {
+  margin: 0 auto;
+
+  & > a {
+    width: auto;
+  }
+}

@@ -37,6 +37,12 @@
   }
 }
 
+.mega-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .mega-menu__list-item {
   margin-bottom: 20px;
 

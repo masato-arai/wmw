@@ -6,12 +6,6 @@
   @media (--desktop) {
     padding: 29px 0 28px;
   }
-
-  & ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .header-menu__item {

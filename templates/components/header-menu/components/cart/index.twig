@@ -1,5 +1,23 @@
 <div class="cart js-cart">
-  <div class="cart__box">
-    Content
+  <div class="cart__container">
+    <h3>Your Cart</h3>
+    <ul class="cart__list">
+      {% for i in 0..1 %}
+        <li class="cart__item">
+          <div class="l-flex">
+            <div class="cart__thumbnail">
+              <img src="/assets/images/image-tiny.jpg" />
+            </div>
+            <div class="card__details">
+              Item
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% include 'components/button' with {
+      url: '/',
+      label: 'Checkout',
+    } %}
   </div>
 </div>
