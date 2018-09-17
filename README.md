@@ -1,4 +1,4 @@
-# Front End Test for WE MAKE WEBSITES
+# Front End Test
 
 For an overview of the project in a browser please visit [this page](http://wmw.m-a-s.info/).
 
