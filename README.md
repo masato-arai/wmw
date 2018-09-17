@@ -1,12 +1,18 @@
-# Front End Test for WE MAKE WEBSITES
-
-I chose to use Gatsby for this project.
+# Front End Test
 
 For an overview of the project in a browser please visit [this page](http://wmw.m-a-s.info/).
 
 ```sh
 http://wmw.m-a-s.info/
 ```
+
+![screen shot 2018-09-17 at 00 17 21](https://user-images.githubusercontent.com/4133530/45602073-52ba0a80-ba0f-11e8-88d1-791786a74db4.png)
+
+## Notes
+I only use [PostCSS](https://postcss.org/) in this project as I tried to get light weight as much as possible.  
+Basically global JS and CSS files are in /src folder in root directory.  
+All html and component templates are in /templates directory in root.  
+The transpiled and compiled files are in /web folder instead of /public.
 
 ## Install
 
@@ -54,7 +60,7 @@ http://localhost:3000/
 
 ## Deploy
 
-Deploy with Rsync by running the command below (NOTE: Server requires a password)
+Deploy with Rsync by running the command below (NOTE: You need to setup your server)
 
 ```sh
 $ mv deploy.example deploy

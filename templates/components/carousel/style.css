@@ -1,6 +1,10 @@
 .carousel {
   height: 100%;
 
+  & .slick-initialized {
+    visibility: visible;
+  }
+
   & .slick-slider,
   & .slick-slider > div,
   & .slick-slider > div > div,
@@ -120,6 +124,10 @@
       right: var(--spacing-huge);
     }
   }
+}
+
+.carousel__main {
+  visibility: hidden;
 }
 
 .carousel__item {

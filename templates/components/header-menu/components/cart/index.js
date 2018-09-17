@@ -22,7 +22,7 @@ const toggleCart = e => {
   }
 };
 
-const cart = () => {
+const cart = async () => {
   $(window).on('click', hideCart);
   $('.js-cart-opener').on('click', toggleCart);
   $('.js-cart').on('click', doNotClose);

@@ -33,6 +33,7 @@
 @import './objects/wrapper';
 
 /* Components */
+/*  These should be glob but postcss-easy-import's glob function didn't work somehow */
 @import '../../templates/components/button/style.css';
 @import '../../templates/components/small-button/style.css';
 @import '../../templates/components/header-banner/style.css';
