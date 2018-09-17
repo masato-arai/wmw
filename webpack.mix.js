@@ -19,7 +19,6 @@ mix
   .postCss('src/css/main.css', 'web/css', [
     require('precss')(),
     require('postcss-easy-import')({ prefix: '_' }),
-    require('lost'),
     require('postcss-custom-media'),
   ])
   .js('src/js/main.js', 'web/js')
