@@ -11,7 +11,7 @@ http://wmw.m-a-s.info/
 ## Notes
 I only use [PostCSS](https://postcss.org/) in this project as I tried to get light weight as much as possible.  
 Basically global JS and CSS files are in /src folder in root directory.  
-All html and component templates are in /templates directory in root.  
+All html (twig) and component templates are in /templates directory in root.  
 The transpiled and compiled files are in /web folder instead of /public.
 
 ## Install
